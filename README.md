@@ -1,4 +1,4 @@
-# Digital Signatures and Quantum Cryptanalysis
+# Algebraic Graph Theory for Cryptographic Protocols
 
 In this project, we explore the application of algebraic graph theory to develop cryptographic protocols that are resilient to quantum attacks. Specifically, we analyze the spectral and algebraic properties of Cayley graphs, expander graphs, and isogeny graphs to construct secure systems for digital signatures and key generation. By leveraging adjacency matrices and eigenvalues, we establish cryptographic primitives and evaluate their robustness.
 Our work involves generating these graph types and performing spectral analysis, focusing on key metrics like spectral gap, spectral radius, and algebraic connectivity, which are crucial for cryptographic strength. We implement a graph-based digital signature scheme and assess its signature uniqueness and verification accuracy.
