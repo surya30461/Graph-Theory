@@ -1,51 +1,6 @@
 # Digital Signatures and Quantum Cryptanalysis
-This project explores digital signature schemes and their robustness against quantum cryptanalysis using simulated attacks such as Grover's and Shor's algorithms. It includes theoretical explanations, implementation details, and results from the simulations.
 
-Features
-Digital Signature Verification:
-
-Implements and verifies a digital signature scheme.
-Provides hash verification and eigenvalue computations for validation.
-Grover's Attack Simulation:
-
-Demonstrates quantum speedup in searching possible preimages.
-Simulates Grover's attack and determines its success.
-Shor's Attack Simulation:
-
-Attempts factorization-based cryptanalysis of the signature system.
-Provides results on the eigenvalue analysis and attack success.
-Results Summary
-Signature Validation: The implemented signature was successfully validated.
-Grover's Attack:
-Simulated a quantum search for possible preimages.
-Attack Success: True
-Possible preimages after reduction: 4.472
-Shor's Attack:
-Simulated quantum factorization but did not succeed in breaking the scheme.
-Attack Success: False
-Dependencies
-Python (Version >= 3.8)
-Libraries:
-NumPy
-Matplotlib
-Any other library mentioned in the notebook
-Usage
-Clone the repository:
-bash
-Copy code
-git clone <repository_url>
-Install the required dependencies:
-bash
-Copy code
-pip install -r requirements.txt
-Open the Jupyter Notebook:
-bash
-Copy code
-jupyter notebook Digital_Signatures_Final.ipynb
-Run the notebook cells sequentially to explore the implementation and results.
-Future Work
-Enhance simulations with optimized algorithms for Grover's and Shor's attacks.
-Extend to other cryptographic primitives for a broader analysis.
-Evaluate against hybrid classical-quantum schemes.
-Acknowledgements
-This project draws on theoretical insights from quantum computing and cryptographic security.
+In this project, we explore the application of algebraic graph theory to develop cryptographic protocols that are resilient to quantum attacks. Specifically, we analyze the spectral and algebraic properties of Cayley graphs, expander graphs, and isogeny graphs to construct secure systems for digital signatures and key generation. By leveraging adjacency matrices and eigenvalues, we establish cryptographic primitives and evaluate their robustness.
+Our work involves generating these graph types and performing spectral analysis, focusing on key metrics like spectral gap, spectral radius, and algebraic connectivity, which are crucial for cryptographic strength. We implement a graph-based digital signature scheme and assess its signature uniqueness and verification accuracy.
+To test quantum resilience, we simulate Grover’s algorithm and Shor’s algorithm to identify potential vulnerabilities in graph-based schemes. While Grover’s attack highlights partial reductions in security, Shor’s simulation demonstrates robustness under specific conditions. Additionally, we optimize the scalability of these methods using parallel computation, enabling spectral analysis for large-scale graphs.
+The results show that isogeny graphs offer advanced post-quantum potential, while Cayley and expander graphs provide strong cryptographic properties. This study highlights the viability of graph-based cryptography for secure communication in a quantum era and sets a foundation for further research into advanced graph structures and attack simulations.
